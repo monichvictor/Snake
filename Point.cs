@@ -34,8 +34,8 @@ namespace Snake
         {
             switch (direction)
             {
-                case Direction.LEFT: x = x+Offset; break;
-                case Direction.RIGHT: x = x-Offset; break;
+                case Direction.LEFT: x = x-Offset; break;
+                case Direction.RIGHT: x = x+Offset; break;
                 case Direction.UP: y = y-Offset; break;
                 case Direction.DOWN: y = y+Offset; break;
             }

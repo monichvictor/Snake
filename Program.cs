@@ -13,14 +13,19 @@ namespace Snake
             Console.SetWindowSize(80,25);
             Console.SetBufferSize(80, 25);
             Console.CursorVisible = false;
-            Horizontalline Topline = new Horizontalline(0, 78, 0, '+');
-            Horizontalline Bottomline = new Horizontalline(0, 78, 24, '+');
+            Horizontalline Topline = new Horizontalline(0, 78, 0, '*');
+            Horizontalline Bottomline = new Horizontalline(0, 78, 24, '*');
             Verticalline leftline = new Verticalline(0,24,0,'+');
             Verticalline rightline = new Verticalline(0,24,78,'+');
             Topline.Draw();
             Bottomline.Draw();
             leftline.Draw();
             rightline.Draw();
+
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p,4,Direction.RIGHT);
+            snake.Draw();
+
             Console.ReadKey();
 
         }

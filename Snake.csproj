@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Direction.cs" />
     <Compile Include="Figure.cs" />
+    <Compile Include="Snake.cs" />
     <Compile Include="Verticalline.cs" />
     <Compile Include="Horizontalline.cs" />
     <Compile Include="Point.cs" />

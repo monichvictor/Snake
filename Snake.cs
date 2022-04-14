@@ -9,6 +9,7 @@ namespace Snake
     internal class Snake : Figure
     {
         Direction direction;
+        public int Speed = 4;
         public Snake(Point tail, int lenght, Direction dir)
         {
             pList = new List<Point>();
@@ -57,6 +58,7 @@ namespace Snake
             {
                 food.sym = head.sym;
                 pList.Add(food);
+                SetSpeed(Length());
                 return true;
             }
             else return false;
@@ -71,6 +73,13 @@ namespace Snake
             }
             return false;
 
+        }
+        public int Length()
+        { return pList.Count; }
+
+        private void SetSpeed(int length)
+        {
+            Speed = 4+length/4;
         }
     }
 }

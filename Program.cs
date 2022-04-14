@@ -43,10 +43,11 @@ namespace Snake
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.HandleKey(key.Key);
                 }
-                Thread.Sleep(150);
+                 Thread.Sleep(800/snake.Speed);
+            }
                
 
-            }
+            
             Console.SetCursorPosition(2, 2);
             Console.ReadKey();
 
